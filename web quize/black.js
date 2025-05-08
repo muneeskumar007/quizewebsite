@@ -108,11 +108,11 @@ const checkAnswer = (e) => {
 const createQuestion = () => {
   clearInterval(timerInterval);
 
-  let secondsLeft = 15;
+  let secondsLeft = 12;
   const timerDisplay = document.querySelector(".quiz-container .timer");
   timerDisplay.classList.remove("danger");
 
-  timerDisplay.textContent = `Time Left: 15 seconds`;
+  timerDisplay.textContent = `Time Left: 12 seconds`;
 
   timerInterval = setInterval(() => {
     timerDisplay.textContent = `Time Left: ${secondsLeft
