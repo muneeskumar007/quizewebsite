@@ -27,7 +27,7 @@ let quizData = [
 {
   question:"If only one memory location is to be reserved for a class variable, no matter how many objects are instantiated, then the variable should be declared as ",
   options:["extern","static","volatile","const"],
-  correct:".p"
+  correct:"extern"
 },
 {
   question:"Which of the followings is correct for a function definition along with storage-class specifier in C language?",
@@ -46,7 +46,7 @@ let quizData = [
 },
 {
     question:"in C ,it possible to inherit class properites and function from one class to another",
-    options:["  True","False"],
+    options:["True","False"],
     correct:"True"
 },
 {
@@ -55,7 +55,7 @@ let quizData = [
     correct:"none of  the above"
 }, 
 {
-    question:"int x,y=5,z=5 ....x=y==z;......printf('%d',x);....getchar(); (NOTE:type panna katuppa irukunu single line la type pannite atha error nu consider pannathinga)",
+    question:"int x,y=5,z=5 ...x=y==z;...printf('%d',x);...getchar(); (NOTE:type panna katuppa irukunu single line la type pannite atha error nu consider pannathinga)",
     options:["0","1","5","compile error"],
     correct:"1"
 }, 
@@ -108,11 +108,11 @@ const checkAnswer = (e) => {
 const createQuestion = () => {
   clearInterval(timerInterval);
 
-  let secondsLeft = 12;
+  let secondsLeft = 15;
   const timerDisplay = document.querySelector(".quiz-container .timer");
   timerDisplay.classList.remove("danger");
 
-  timerDisplay.textContent = `Time Left: 12 seconds`;
+  timerDisplay.textContent = `Time Left: 15 seconds`;
 
   timerInterval = setInterval(() => {
     timerDisplay.textContent = `Time Left: ${secondsLeft
